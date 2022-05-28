@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+
+    {% load static %}
+    <!--<link rel="stylesheet" href="{% static 'style.css' %}"> -->
+</head>
+<style>
+    .be6sR {
+      border-radius: 50%;
+    }
+    .dest {
+        height: 6cm;
+        width: 10cm;
+        border-radius: 10px;
+        border-color: rgb(136, 237, 241);
+        border-style: solid;
+        margin: 0 auto;
+        display: block;
+        
+    }
+    .offer{
+        background-color: rgb(242, 97, 7);
+        font-size: larger;
+        font-family: cursive;
+        color: azure;
+        padding-left: 3px;
+        padding-right: 3px;
+        border-radius: 20%;
+    } 
+    .heading {
+        color: aqua;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+</style>
+<body bgcolor=#171717>
+        <img src="static/rg.jpg" align="left" width="150" alt="Hello World" class="be6sR">
+    <H1>
+        <Font face="Microsoft Tai le" color="Red" size=20>
+            <Center>I am {{name}} {{surname}} and this is just a trial!<BR></Center>
+        </Font>
+    </H1>
+    <br>
+    <HR Size=4 width=85% color="blue">
+    <a href="#xyz">Visit!</a>
+    <Center>
+        <Font Size="6" color="yellow">
+            <Pre>
+                _______________________________
+                |                              |
+                  |do                            |  
+                |    {                         |
+                |        /* code */            |
+                |        /*incrementation*/    |
+                |    } while (/* condition */);|
+                |______________________________|
+            
+    </Pre>
+        </Font>
+    </CENTER>
+    <HR COLOR="White" size=4>
+    <H1 Align="Center">
+        <Font color="Aqua" face="Calibri" size="10"><B>Videos You Want</B></Font>
+    </H1>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_RBlE6Ar8mw" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <BR>
+    <hr size="4" color="white">
+<br>
+<br>
+
+    
+
+    <hr size=4 color="white">
+    <h1 Align="Center">
+        <Font color="Aqua" size=10 face="Calibri"><B>Songs You Want</B></Font>
+    </h1>
+    <Center>
+        <Font color="white" face="Arial"> Bom diggy</Font>
+    </center>
+    <center><audio src="https://cdnsongs.com/music/data/Single_Track/201708/Bom_Diggy/128/Bom_Diggy_1.mp3" controls>Your
+            Browser does not support this element</audio></Center>
+    <BR>
+    <Center>
+        <Font color="white" face="Arial">Nashe Si Chadh Gayi</Font>
+    </center>
+    <center><audio controls>
+            <source src="https://dns4.vippendu.com/download/128k-amddo/Nashe-Si-Chadh-Gayi.mp3" type="audio/mpeg">Your
+            browser does not supports audio
+        </audio></center>
+    <BR>
+    <Center>
+        <Font color="white" face="Arial">Naah</Font>
+    </center>
+    <center><audio src="https://cdnsongs.com/music/data/Single_Track/201711/Naah/128/Naah_1.mp3" controls>Your Browser
+            does not support this element</audio></Center>
+
+    <BR>
+    <HR SIZE=4 COLOR="WHITE">
+    <BR>
+        <center><Form action="add" method="GET">
+        <font size=4 color="White" face="Arial">
+            {% csrf_token %}
+            <label for='num1'>Enter 1st number </label>
+            <input type="number" id='num1' name='num1' required><br><br>
+            <label for="num2">Enter 2st number </label>
+            <input type="number" id="num2" name='num2' required><br><br>
+            <input type="submit" value = "GO">Get the sum in new page
+            
+        </font>
+        <h1 style="color:rgb(120, 143, 244)">Paste the link or text to generate a qrcode which contains that link or text</h1>
+        </Form></center>
+        <center><form action="gen" method="GET">
+            <font size=4 color="White" face="Arial">
+                <label for="data">Write text or paste the link</label>
+                <input type="text" id = "data" name="data" autocomplete="off" required><br><br>
+                <input type="submit" value = "Generate">
+            </font>
+
+        </form><center>
+    
+<<fieldset style="background:#2d2d30;">
+        <Form action="" method="">
+            <font size=4 color="White" face="Arial">
+                <Center>
+                    <H1 face="Calibri"><BIG>User iNFORMATION</BIG></H1><br>
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="fname" size="35" placeholder="Joe" required><br><br>
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname" size="35" placeholder="Watson" required><br><br>
+                    <fieldset height>
+                        <P>Gender</P>
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="Male" size="35">
+                        <label for="female">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Female</label>
+                        <input type="radio" id="female" name="gender" value="Female" size="35"><br><br>
+                    </fieldset>
+                    <br>
+                    <label for="email1">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="email" id="email1" name="email1" size="35" placeholder="example123@gmail.com"
+                        required><br><br>
+                    <label for="birthday">Birthday </label>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                    <input type="submit" value="Submit the form"><br>
+                </Center>
+            </font>
+        </Form>
+    </fieldset>
+    <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+    <P id="xyz"></P>
+
+    <hr size="4" color="white">
+    <!-- This is just for practice and to relate from the notes -->
+    {% for i in dests %}
+    {% if i.offer %}
+    <font color = "white" face = "Calibiri" size = "3" class = "offer">Special offer</font>
+    {% endif %}
+    <img src="static/{{i.img}}" alt="Image not found" class = "dest">
+    <center><font face = "Arial" color = "Yellow" size = "5">
+    <b><big>DESTINATION </big></b>: {{i.name}}<br>
+    </font></center>
+    <font face = "Arial" color = "White" size = "3">
+    <b><big>Description </big></b>: {{i.desc}}<br>
+    </font>
+    <font face = "Arial" color = "White" size = "4">
+        <b><big>Price </big></b>: {{i.price}}<br><br>
+    </font>
+
+    {% endfor %}     
+</body>
+
+</html>

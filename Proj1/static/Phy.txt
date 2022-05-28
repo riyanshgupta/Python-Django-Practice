@@ -1,0 +1,15 @@
+When the temperature is the same throughout the entire system, we consider the system to be in
+thermal equilibrium.
+
+When there is no change in pressure at any point of the system, we consider the system to be in
+mechanical equilibrium.
+
+When the chemical composition of a system does not vary with time, we consider the system to
+be in chemical equilibrium.
+
+Phase equilibrium in a two-phase system is when the mass of each phase reaches an equilibrium
+level.
+
+A thermodynamic system is said to be in thermodynamic equilibrium if it is in chemical
+equilibrium, mechanical equilibrium and thermal equilibrium and the relevant parameters
+cease to vary with time.
